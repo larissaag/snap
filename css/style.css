@@ -17,15 +17,15 @@ body {
 header {
     display: flex;
     align-items: center;
-    margin-top: 0.5rem;
+    margin-top: 8px;
 }
 
 .logo {
     color: hsl(0, 0%, 8%);
-    margin-left: 2.5rem;
-    margin-right: 3rem;
+    margin-left: 40px;
+    margin-right: 48px;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 48px;
 }
 nav {
     display: flex;
@@ -35,7 +35,7 @@ nav {
 ul {
     display: flex;
     justify-content: space-around;
-    width: 27%;
+    width: 40%;
     
 }
 li {
@@ -45,13 +45,18 @@ li {
 li img {
     display: flex;
     align-items: center;
-    margin-bottom: 0.3rem;
+    margin-bottom: 4.8px;
 }
 a {
     color: hsl(0, 0%, 41%);
 }
 a:hover {
     color: hsl(0, 0%, 8%);
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
 }
 .login-area {
     display: flex;
@@ -67,13 +72,13 @@ a:hover {
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    height: 4rem;
+    height: 64px;
 }
 .register {
-    margin-left: 2.5rem;
-    margin-right: 5rem;
-    padding: 0.6rem 1rem;
-    border-radius: 0.6rem;
+    margin-left: 40px;
+    margin-right: 80px;
+    padding: 9.6px 16px;
+    border-radius: 9.6px;
     border: 1px solid hsl(0, 0%, 41%);
     color: hsl(0, 0%, 41%);
     cursor: pointer;
@@ -91,7 +96,7 @@ main {
     justify-content: space-evenly;
     width: 100%;
     align-items: flex-end;
-    padding: 5rem 2.5rem;
+    padding: 40px;
 }
 .informations {
     display: flex;
@@ -103,8 +108,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 31rem;
-    height: 27rem;
+    width: 496px;
+    height: 432px;
 }
 .description-title {
     justify-self: flex-start;
@@ -120,11 +125,11 @@ main {
 .description-button {
     color: hsl(0, 0%, 98%);
     font-weight: 700;
-    width: 8rem;
-    height: 2.6rem;
-    border-radius: 0.6rem;
+    width: 128px;
+    height: 41.6px;
+    border-radius: 9.6px;
     background-color: hsl(0, 0%, 8%);
-    padding: 0.6rem 1rem;
+    padding: 9.6px 16px;
     cursor: pointer;
     justify-self: flex-end;
 }
@@ -139,7 +144,7 @@ main {
     justify-content: space-between;
 }
 .hero-image {
-    width: 31rem
+    width: 432px
 }
 .desktop-image {
     display: flex;
@@ -154,8 +159,8 @@ footer {
 }
 @media (max-width: 1440px) {
     .alguma-coisa {
-        height: 27rem;
-        width: 27rem;
+        height: 432px;
+        width: 432px;
     }
     .description-title {
         font-size: 4rem;
@@ -166,23 +171,30 @@ footer {
         display: flex;
         justify-content: space-between;
     }
+    .header {
+        align-items: center;
+    }
     .logo {
         font-size: 2rem;
         margin: 0;
-        padding: 0 1rem ;
+        padding: 0 16px ;
     }
     .menu {
-        height: 100%;
         display: flex;
         justify-self: flex-end;
-        padding: 0 1rem;
+        padding: 0 16px;
+        position: absolute;
+        left: 93%;
     }
     .qualquer-coisa {
-        position: relative;
+        position: absolute;
+        top: 0;
+        left: -300px;
         display: block;
         flex-direction: column;
-        width: 18rem;
+        width: 300px;
         height: 100vh;
+        
     }
     ul {
         flex-direction: column;
@@ -199,13 +211,13 @@ footer {
         align-self: center;
         display: flex;
         flex-direction: column;
-        height: 1.8rem;
-        width: 2rem;
+        height: 28.8px;
+        width: 32px;
     }
     label span {
         position: absolute;
         display: block;
-        height: 0.2rem;
+        height: 3.2px;
         width: 100%;
         background: hsl(0, 0%, 8%);
         transition: 0.25s ease-in-out;
@@ -234,33 +246,51 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        height: 25vh;
+        height: 40vh;
         justify-content: space-around;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .nav {
+        align-items: flex-start;
+        height: 50%;
+    }
+    .login-area {
+        justify-content: space-between;
+        height: 70px;
+    }
+    .register {
+        margin: 0;
+        padding: 9.6px 48px;
     }
     main {
         flex-direction: column-reverse;
         align-items: center;
         padding: 0;
-        margin-top: 2rem;
+        margin-top: 32px;
     }
     .informations {
         width: 90%;
-        height: 15rem;
-        
+        height: 240px;
     }
     .alguma-coisa {
         width: 90%;
         justify-content: space-around;
+        text-align: center;
+        align-self: center;
     }
     .description-title {
-        font-size: 1.5rem;
+        font-size: 1.9rem;
         align-self: center;
     }
     .description-button {
         align-self: center;
     }
+    .icons img {
+        width: 65px;
+    }
     .hero-image {
-        width: 97%;
+        width: 100%;
     }
     .desktop-image {
         display: none;
@@ -268,5 +298,9 @@ footer {
     .mobile-image {
         display: flex;
         width: 100%;
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
     }
 }
