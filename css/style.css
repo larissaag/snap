@@ -67,7 +67,7 @@ a:hover {
 .active {
     display: flex;
 }
-.qualquer-coisa {
+#qualquer-coisa {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -184,17 +184,19 @@ footer {
         justify-self: flex-end;
         padding: 0 16px;
         position: absolute;
-        left: 93%;
+        right: 0px;
+        z-index: 2;
     }
-    .qualquer-coisa {
+    #qualquer-coisa {
         position: absolute;
         top: 0;
-        left: -300px;
+        right: -300px;
         display: block;
         flex-direction: column;
         width: 300px;
         height: 100vh;
-        
+        transition: 0.25s ease-in;
+        z-index: 1;
     }
     ul {
         flex-direction: column;
@@ -298,9 +300,5 @@ footer {
     .mobile-image {
         display: flex;
         width: 100%;
-    }
-    footer {
-        position: absolute;
-        bottom: 0;
     }
 }
