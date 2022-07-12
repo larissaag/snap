@@ -37,6 +37,12 @@ ul {
     justify-content: space-around;
     width: 27%;
 }
+.features {
+    position: relative;
+}
+.company {
+    position: relative;
+}
 #features-dropdown {
     display: none;
     flex-direction: column;
@@ -223,6 +229,7 @@ footer {
     }
     .header {
         align-items: center;
+        position: relative;
     }
     .logo {
         font-size: 2rem;
